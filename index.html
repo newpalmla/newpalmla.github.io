@@ -48,17 +48,17 @@
                         </p>
                     </div>
 
-                    <!-- EVENTS ------------------------------------------------------------------->
-                    <button class="collapsible mobile">EVENTS</button>
-                    <div class="section_content" id="events_mobile">
-                        {% include events.html 
-                            mobile=true %}
-                    </div>
-
                     <!-- RELEASES ----------------------------------------------------------------->
                     <button class="collapsible mobile">RELEASES</button>
                     <div class="section_content" id="releases_mobile">
                         {% include releases.html
+                            mobile=true %}
+                    </div>
+
+                    <!-- EVENTS ------------------------------------------------------------------->
+                    <button class="collapsible mobile">EVENTS</button>
+                    <div class="section_content" id="events_mobile">
+                        {% include events.html 
                             mobile=true %}
                     </div>
 
@@ -119,19 +119,19 @@
             <main>
                 <div class="content-main desktop">
 
-                     <!-- EVENTS ------------------------------------------------------------------->
-                     <button class="collapsible desktop">EVENTS</button>
-                     <div class="section_content" id="events">
-                         {% include events.html
-                             mobile=false %}
-                     </div>
-
                     <!-- RELEASES ----------------------------------------------------------------->
                     <button class="collapsible desktop">RELEASES</button>
                     <div class="section_content" id="releases">
                         {% include releases.html
                             mobile=false %}
                     </div>
+
+                    <!-- EVENTS ------------------------------------------------------------------->
+                     <button class="collapsible desktop">EVENTS</button>
+                     <div class="section_content" id="events">
+                         {% include events.html
+                             mobile=false %}
+                     </div>
                 
                     <!-- MIXES -------------------------------------------------------------------->
                     <button class="collapsible desktop">MIXES</button>
